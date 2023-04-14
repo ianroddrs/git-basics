@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body{
+            max-width: 1000px;
+            border: 1px solid gray;
+            min-height: 200px;
+            margin: 10px auto;
+        }
+
+        .container{
+            font-size: 20 px;
+            font-family: sans-serif;
+            background-color: #eee;
+            padding-left: 10px;
+        }
+        
+        .titulos{
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .radio:hover{
+            background-color: lightblue;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+    <body>
+        <div class="container">
+            <h1>Digite suas informações</h1>
+            <form name="fm aprendendo" method="post" action="forms2.html">
+                <label class="titulos">Digite o seu nome:</label>
+                <input type="text" name="txt_nome" maxlength="30" placeholder="Seu nome aqui...">
+
+                <br><br>
+
+                <label class="titulos">Digite sua senha:</label>
+                <input type="password" name="txt_nome" maxlength="20" placeholder="Sua senha aqui...">
+
+                <br><br>
+
+                <label class="titulos">Selecione o seu Estado:</label>
+                <select name="sel_estado">
+                    <option value="SP">São Paulo</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="PA">Pará</option>
+                </select>
+
+                <br><br>
+
+                <label class="titulos">Qual o seu jogo preferido?</label><br>
+                <label class="radio"><input type="radio" name="jogos" checked="True" value="Batman">Batman</label><br>
+                <label class="radio"><input type="radio" name="jogos" value="Skyrin">Skyrin</label><br>
+                <label class="radio"><input type="radio" name="jogos" value="Hellblade">Hellblade</label><br>
+                <label class="radio"><input type="radio" name="jogos" value="Tekken">Tekken</label><br>
+                <label class="radio"><input type="radio" name="jogos" value="Assasins Creed">Assasins Creed</label><br>
+
+                <br><br>
+
+                <label class="titulos">Selecione ps livros que você leu:</label><br>
+                <label><input type="checkbox" name="ch_sda" value="1"> Senhor dos Anéis</label><br>
+                <label><input type="checkbox" name="ch_hp" value="1"> Harry Potter</label><br>
+                <label><input type="checkbox" name="ch_sh" value="1"> Sherlock Homes</label><br>
+                <label><input type="checkbox" name="ch_nn" checked="True" value="1"> Narnia</label><br>
+
+                <br><br>
+
+                <label class="titulos">Deixe a sua mensagem:</label><br>
+                <textarea name="txt_area" cols="50" rows="10" maxlength="250" placeholder="Sua mensagem..."></textarea>
+                
+                <br><br>
+
+                <label class="titulos">Envie seu Arquivo:</label><br>
+                <input type="file" name="fl_arquivo" accept="audio/*" multiple> <!--audio/*, video/*, image/*-->
+
+                <br><br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar campos">
+                <input type="button" value="Fazer alguma coisa">
+                
+            </form>
+
+        </div>
+        
+    </body>
+</html>
